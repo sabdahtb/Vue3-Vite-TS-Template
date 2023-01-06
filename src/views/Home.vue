@@ -1,22 +1,43 @@
 <template>
-  <div class="home-container page-container">
-    <img class="vue-element-plus-logo" alt="Vue logo" src="/vite.svg" />
-    <div class="page-title">Vue Vite TypeScript</div>
+  <div class="container">
+    <div class="page-title">Home Page</div>
+    <p>store Root is: {{ text }}</p>
+    <p>store doubleCount is: {{ count }}</p>
+    <button class="btn" @click="double">Double</button>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, reactive, computed, toRefs } from 'vue'
+import { useStore } from '../store'
 
 export default defineComponent({
-  name: 'Home'
+  name: 'Vuex',
+
+  setup() {
+    const store = useStore()
+    const reactiveData = reactive({
+      text: computed(() => store.state.text),
+      count: computed(() => store.state.numFactoryModule.count)
+    })
+
+    const double = () => {
+      store.commit('numFactoryModule/DOUBLE_COUNT')
+    }
+
+    return {
+      ...toRefs(reactiveData),
+      double
+    }
+  }
 })
 </script>
 
 <style scoped lang="stylus">
-.home-container {
-  .vue-element-plus-logo {
-    width 50%
+  .btn {
+    padding 5px 10px
+    border-radius 4px
+    margin-top 20px
+    cursor pointer
   }
-}
 </style>

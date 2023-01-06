@@ -1,13 +1,24 @@
 <template>
-  <ul>
-    <li><router-link to="/">Home</router-link></li>
-    <li><router-link to="/axios">Axios</router-link></li>
-  </ul>
-  <router-view/>
+  <Main />
 </template>
+
 <script lang="ts">
 import { defineComponent } from 'vue'
+import Main from './components/Main.vue'
+
 export default defineComponent({
-  name: 'App'
+  name: 'App',
+  components: {
+    Main
+  }
 })
 </script>
+
+<style lang="stylus">
+#app {
+  box-sizing border-box
+  position relative
+  width 100%
+  height 100%
+}
+</style>
