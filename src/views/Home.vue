@@ -12,7 +12,7 @@ import { defineComponent, reactive, computed, toRefs } from 'vue'
 import { useStore } from '../store'
 
 export default defineComponent({
-  name: 'Vuex',
+  name: 'HomeScreen',
 
   setup() {
     const store = useStore()
@@ -34,10 +34,10 @@ export default defineComponent({
 </script>
 
 <style scoped lang="stylus">
-  .btn {
-    padding 5px 10px
-    border-radius 4px
-    margin-top 20px
-    cursor pointer
-  }
+.btn {
+  padding 5px 10px
+  border-radius 4px
+  margin-top 20px
+  cursor pointer
+}
 </style>

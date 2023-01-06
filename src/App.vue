@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import MainComponent from './components/Main.vue'
+import MainComponent from '@/components/Main.vue'
 
 export default defineComponent({
   name: 'App',
@@ -16,6 +16,9 @@ export default defineComponent({
 
 <style lang="stylus">
 #app {
+  font-family Avenir, Helvetica, Arial, sans-serif
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
   box-sizing border-box
   position relative
   width 100%
