@@ -1,15 +1,15 @@
 <template>
-  <Main />
+  <MainComponent />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Main from './components/Main.vue'
+import MainComponent from './components/Main.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    Main
+    MainComponent
   }
 })
 </script>
