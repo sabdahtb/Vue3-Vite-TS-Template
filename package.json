@@ -9,8 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "stylus": "^0.59.0",
     "vue": "^3.2.45",
-    "vue-router": "4"
+    "vue-router": "4",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
