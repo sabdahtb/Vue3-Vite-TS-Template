@@ -34,11 +34,18 @@
     "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "@types/jest": "^26.0.22",
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
     "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/compiler-sfc": "^3.0.5",
     "@vue/test-utils": "^2.0.0-rc.18",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
     "eslint": "^8.0.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.6.0",
@@ -53,19 +60,12 @@
     "jest-environment-jsdom": "^29.3.1",
     "lint-staged": "^13.1.0",
     "prettier": "^2.8.1",
+    "stylus": "^0.59.0",
     "ts-jest": "^29.0.3",
     "typescript": "*",
     "vite": "^4.0.0",
+    "vite-plugin-style-import": "^0.9.2",
     "vue-jest": "^5.0.0-alpha.10",
-    "vue-tsc": "^1.0.11",
-    "@commitlint/cli": "^12.1.1",
-    "@commitlint/config-conventional": "^12.1.1",
-    "@types/jest": "^26.0.22",
-    "@vue/compiler-sfc": "^3.0.5",
-    "commitizen": "^4.2.3",
-    "cz-conventional-changelog": "^3.3.0",
-    "cz-customizable": "^6.3.0",
-    "stylus": "^0.59.0",
-    "vite-plugin-style-import": "^0.9.2"
+    "vue-tsc": "^1.0.11"
   }
 }
